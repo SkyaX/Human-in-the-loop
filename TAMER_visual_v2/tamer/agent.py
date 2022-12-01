@@ -176,7 +176,7 @@ class Tamer:
 
                         time.sleep(0.01)  # save the CPU
 
-                        human_reward = disp.get_scalar_feedback()
+                        human_reward = disp.get_visual_feedback()
                         feedback_ts = dt.datetime.now().time()
                         if human_reward != 0:
                             dict_writer.writerow(
